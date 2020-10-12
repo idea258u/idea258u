@@ -1,0 +1,80 @@
+body {
+  margin: 0; }
+  body .landing {
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .landing .container {
+      margin: 0 auto;
+      width: 60%;
+      border: 1px solid #060606;
+      height: 65vh;
+      border-radius: 4px; }
+      body .landing .container .top {
+        width: 100%;
+        height: 100px;
+        display: flex; }
+        body .landing .container .top .circle {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          margin-left: 10px;
+          margin-top: 10px; }
+        body .landing .container .top .circle1 {
+          background: #E71D36; }
+        body .landing .container .top .circle2 {
+          background: #FF9F1C; }
+        body .landing .container .top .circle3 {
+          background: #2EC4B6; }
+        body .landing .container .top .url {
+          font-family: 'Poppins';
+          font-style: italic;
+          color: #8338EC;
+          font-size: 10px;
+          margin-top: -2px;
+          margin-left: 30px; }
+    body .landing .title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      body .landing .title .main {
+        margin: 0 auto; }
+        body .landing .title .main p {
+          font-family: 'Poppins';
+          font-weight: 800;
+          color: #FF006E;
+          font-size: 4rem; }
+      body .landing .title .sub {
+        margin: 0 auto; }
+        body .landing .title .sub p {
+          font-family: 'Poppins';
+          color: #8338EC;
+          font-size: 1rem;
+          margin-top: -50px; }
+    body .landing .footer {
+      margin-top: 120px;
+      display: flex;
+      justify-content: center; }
+      body .landing .footer .nav {
+        display: flex; }
+        body .landing .footer .nav p {
+          margin-left: 40px;
+          font-family: 'Roboto';
+          color: #060606;
+          font-size: 0.9rem; }
+  body .about {
+    margin-top: 2em;
+    margin-left: 4em;
+    max-width: 80%; }
+    body .about h1 {
+      font-family: 'Poppins';
+      font-size: 4em;
+      color: #8338EC; }
+    body .about p {
+      font-family: 'Roboto';
+      font-size: 1.2em;
+      line-height: 50px; }
