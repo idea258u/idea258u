@@ -1,80 +1,137 @@
+@font-face {
+  font-family: 'Product-Sans';
+  src: url("/assets/fonts/Product Sans Regular.ttf"); }
+
+@font-face {
+  font-family: 'Product-Sans-Italic';
+  src: url("/assets/fonts/Product Sans Italic.ttf"); }
+
 body {
-  margin: 0; }
+  margin: 0 auto;
+  background: #111111; }
   body .landing {
-    max-width: 100%;
-    margin: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; }
-    body .landing .container {
-      margin: 0 auto;
-      width: 60%;
-      border: 1px solid #060606;
-      height: 65vh;
-      border-radius: 4px; }
-      body .landing .container .top {
-        width: 100%;
-        height: 100px;
-        display: flex; }
-        body .landing .container .top .circle {
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          margin-left: 10px;
-          margin-top: 10px; }
-        body .landing .container .top .circle1 {
-          background: #E71D36; }
-        body .landing .container .top .circle2 {
-          background: #FF9F1C; }
-        body .landing .container .top .circle3 {
-          background: #2EC4B6; }
-        body .landing .container .top .url {
-          font-family: 'Poppins';
-          font-style: italic;
-          color: #8338EC;
-          font-size: 10px;
-          margin-top: -2px;
-          margin-left: 30px; }
     body .landing .title {
-      width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      flex-direction: column; }
-      body .landing .title .main {
-        margin: 0 auto; }
-        body .landing .title .main p {
-          font-family: 'Poppins';
-          font-weight: 800;
-          color: #FF006E;
-          font-size: 4rem; }
-      body .landing .title .sub {
-        margin: 0 auto; }
-        body .landing .title .sub p {
-          font-family: 'Poppins';
-          color: #8338EC;
-          font-size: 1rem;
-          margin-top: -50px; }
-    body .landing .footer {
-      margin-top: 120px;
+      align-items: center; }
+      body .landing .title h1 {
+        color: white;
+        font-family: 'Poppins';
+        font-size: 9rem;
+        margin: 0; }
+      body .landing .title h3 {
+        font-family: "Product-Sans";
+        color: #D90368;
+        font-size: 1.5rem;
+        margin: 0;
+        margin-top: -20px; }
+    body .landing .nav {
+      width: 50%;
       display: flex;
-      justify-content: center; }
-      body .landing .footer .nav {
-        display: flex; }
-        body .landing .footer .nav p {
-          margin-left: 40px;
-          font-family: 'Roboto';
-          color: #060606;
-          font-size: 0.9rem; }
-  body .about {
-    margin-top: 2em;
-    margin-left: 4em;
-    max-width: 80%; }
-    body .about h1 {
-      font-family: 'Poppins';
-      font-size: 4em;
-      color: #8338EC; }
-    body .about p {
-      font-family: 'Roboto';
-      font-size: 1.2em;
-      line-height: 50px; }
+      justify-content: space-evenly;
+      position: relative;
+      top: 100px;
+      color: #D90368;
+      font-family: "Product-Sans";
+      cursor: pointer; }
+  body .about .cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; }
+    body .about .cards .card {
+      width: 500px;
+      height: 400px;
+      background: #161616;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .about .cards .card p {
+        width: 75%;
+        font-family: 'Product-Sans-Italic';
+        font-size: 2rem;
+        margin: 0 auto;
+        line-height: 50px; }
+  body .about .desc {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 10%; }
+    body .about .desc h1 {
+      font-family: 'Product-Sans';
+      font-size: 2rem;
+      color: #8E8E8E; }
+    body .about .desc p {
+      color: #E4E4E4;
+      font-family: 'Product-Sans';
+      font-size: 1.5rem;
+      line-height: 50px;
+      margin-top: 5%; }
+  body .outcomes {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 5%; }
+    body .outcomes h1 {
+      font-family: 'Product-Sans';
+      font-size: 2rem;
+      color: #8E8E8E;
+      margin-bottom: 10%; }
+    body .outcomes .line {
+      display: flex;
+      margin: 0 auto;
+      width: 80%;
+      margin-bottom: 2%; }
+      body .outcomes .line .circle {
+        width: 10px;
+        height: 10px;
+        background: #03CF8B;
+        border-radius: 50%; }
+      body .outcomes .line p {
+        color: #E4E4E4;
+        font-family: 'Product-Sans';
+        font-size: 1.15em;
+        margin-top: -5px;
+        margin-left: 40px; }
+  body .course {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 10%; }
+    body .course .week:nth-child(2n+1) {
+      justify-content: flex-start; }
+    body .course .week:nth-child(2n+2) {
+      justify-content: flex-end;
+      align-items: flex-end; }
+    body .course .week {
+      display: flex;
+      flex-direction: column; }
+      body .course .week h1 {
+        font-family: 'Product-Sans';
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 5%; }
+      body .course .week .topics {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 30em; }
+        body .course .week .topics p {
+          font-family: 'Product-Sans';
+          font-size: 2rem;
+          margin-bottom: 3%; }
+        body .course .week .topics .one {
+          color: #03CF8B; }
+        body .course .week .topics .two {
+          color: #FFD91A; }
+        body .course .week .topics .three {
+          color: #FF8C1A; }
+        body .course .week .topics .four {
+          color: #FF4D6A; }
